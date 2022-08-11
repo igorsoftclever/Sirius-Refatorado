@@ -1,0 +1,175 @@
+/* =================================================CONFIGS================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+}
+
+:root {
+    --title-size: 2.5rem;
+    --sub-title-size: 1.8rem;
+    --text-size: 1rem;
+    --banner-text-size: 2rem;
+    --text-color: #636363;
+    --title-color: #0095BE;
+    --banner-color: #f0f0f0;
+    --text-weight: 500;
+}
+
+h1 {font-size: var(--title-size);}
+h2 {font-size: var(--sub-title-size);}
+p {font-size: var(--text-size); color: var(--text-color); font-weight: var(--text-weight);}
+
+.content {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 5rem;
+
+}
+
+
+/* =================================================HEADER-TOP================================================= */
+.header-top {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+
+.header-top .icon {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.header-top .icon #last {
+    width: 20rem;
+    display: flex;
+    justify-content: right;  
+}
+
+.header-top .icon img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.header-top .icon .text-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.header-top .icon .text-icon p a  {
+    color: var(--title-color);
+}
+
+.header-top .icon .text-icon p, p a {
+    width: 100%;
+    font-size: var(--text-size);
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 650px) {
+
+    .header-top {  
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .header-top .icon {
+        width: 15em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header-top .icon img{
+        width: 2rem;
+        height: 2rem;
+    } 
+    
+    .header-top .icon .text-icon {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .header-top .icon .text-icon p, p a {
+        width: 100%;
+        font-size: 0.7rem;
+        color: var(--text-color);
+    }
+}
+
+/* =================================================HEADER================================================= */
+header {
+    max-width: 100%;
+    height: 100px;
+    border-bottom: 4px solid rgba(134, 134, 134, 0);
+}
+
+header div.container {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+div.container nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    list-style-position: inside;
+    gap: 0 30px;
+}
+
+div.container nav ul li a {
+    color: #202020;
+    font-weight: 500;
+    font-size: var(--text-size);
+    transition: color 0.2s, border 0.2s;
+}
+
+div.container nav ul li a:hover{
+    border-bottom: 4px solid var(--title-color);
+    color: var(--title-color);
+}
+
+/* =================================================BANNER================================================= */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px 0;
+    width: 100%;
+    height: 320px;
+    background: linear-gradient(150grad, #0095be, #83e2fc);
+    font-weight: 600;
+    font-size: var(--banner-text-size);
+    color: var(--banner-color);
+}

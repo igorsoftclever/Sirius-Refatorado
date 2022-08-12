@@ -14,7 +14,7 @@ body {
 
 :root {
     --title-size: 2.5rem;
-    --sub-title-size: 1.8rem;
+    --sub-title-size: 2rem;
     --text-size: 1rem;
     --banner-text-size: 2rem;
     --text-color: #636363;
@@ -136,8 +136,9 @@ p {font-size: var(--text-size); color: var(--text-color); font-weight: var(--tex
 /* =================================================HEADER================================================= */
 header {
     max-width: 100%;
-    height: 100px;
-    border-bottom: 4px solid rgba(134, 134, 134, 0);
+    height: 80px;
+    border-bottom: 4px solid rgba(187, 2, 2, 0);
+    border-bottom: 2px solid #c0c0c0;
 }
 
 header div.container {
@@ -154,6 +155,7 @@ header div.container a #logo {
 @media screen and (max-width: 1080px) {
     header {
         height: 60px;
+        border: none;
     }
 
     header div.container {    
@@ -300,3 +302,11 @@ div.container nav ul li a:hover{
         font-size: 1.5rem;
     }   
 }
+
+/* =================================================FOOTER================================================= */
+footer {
+    width: 100%;
+    height: 300px;
+    margin-top: 20rem;
+}
+

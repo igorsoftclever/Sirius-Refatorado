@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/main-section.css">
 
     <title>Home - Emissor Sat Fiscal</title>
 </head>
@@ -23,14 +24,14 @@
                     <p>11 3991-3923 / 2361-8334</p>
                 </div>
             </div>
-            <div class="icon">
+           <div class="icon">
                 <img src="./assets/icons/o-email.png" alt="">
                 <div class="text-icon">
                     <p><a href="">Envie um E-mail</a></p>
                     <p>softclever@softclever.com.br</p>
                 </div>
             </div>
-            <div class="icon" id="last">
+            <div class="icon">
                 <img src="./assets/icons/contrato.png" alt="">
                 <div class="text-icon">
                     <p><a href="">Soluções em Sistemas</a></p>
@@ -39,17 +40,18 @@
             </div>
         </div>
         <header>
-            <div class="container">
-                <a href=""><img src="./assets/imgs/logo-Soft-Clever.jpg" alt=""></a>
+            <div class="container" id="header">
+                <a href=""><img id="logo" src="./assets/imgs/logo-Soft-Clever.jpg" alt=""></a>
 
-                <nav>
-                    <ul>
+                <nav id='nav'>
+                    <ul id="menu-links">
                         <li><a href="">Home</a></li>
                         <li><a href="">Apresentação das Aplicações</a></li>
                         <li><a href="">A Empresa</a></li>
                         <li><a href="">Clientes</a></li>
                         <li><a href="">Contato</a></li>
                     </ul>
+                    <button id="menu-button"></button>
                 </nav>
             </div>   
         </header>   
@@ -62,11 +64,13 @@
     </div> 
 
     <div class="content">
-        <section>
+        <section id="main-section">
             <main>
 
             </main>
         </section>
     </div>
+
+    <script src="./js/scripts.js"></script>
 </body>
 </html>

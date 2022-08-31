@@ -249,7 +249,11 @@ p {font-size: var(--text-size); color: var(--text-color); font-weight: var(--tex
 
 @media screen and (max-width: 900px) {
     .experimente-gratis button {
-        padding: 2rem 3rem;
+        display: flex;
+    }
+
+    .experimente-gratis button  a{
+        padding: 1rem;
     }
 
     .experimente-gratis h2::before{

@@ -160,11 +160,13 @@ header div.container a #logo {
 .main-tittle{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     text-align: center;
     margin: 2rem auto;
 }
 
 .main-tittle h1{
+    margin: 1rem auto;
     font-size: 42px;
     width: auto;
     color: var(--title-color);

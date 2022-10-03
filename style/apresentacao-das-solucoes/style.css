@@ -65,7 +65,7 @@ div.experimente-gratis {
 .container .box-videos-apr .video-card-apr{
     padding: 1rem;
     width: 100%;
-    height: 350px;
+    height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -75,7 +75,10 @@ div.experimente-gratis {
 }
 
 .video-card-apr .desc-video {
-    max-height: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    font-weight: bold;
 }
 
 .video-card-apr h3{
@@ -85,6 +88,7 @@ div.experimente-gratis {
 .container .box-videos-apr .video-card-apr .video{
     width: 100%;
     height: 200px;
+    border-radius: 5px;
 }
 
 .mais .box-mais h2 {

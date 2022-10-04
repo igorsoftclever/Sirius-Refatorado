@@ -71,11 +71,10 @@ div.experimente-gratis {
     justify-content: space-between;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 5px;
-
 }
 
 .container .box-videos-apr .video-card-apr.sm{
-    height: 400px;
+    height: 420px;
 }
 
 .video-card-apr .desc-video {

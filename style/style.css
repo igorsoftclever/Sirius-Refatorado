@@ -83,7 +83,7 @@ p {font-size: var(--text-size); color: var(--text-color); font-weight: var(--tex
     margin-left: 20px;
 }
 
-.header-top .icon .text-icon p a  {
+.header-top .icon .text-icon p#icon-t   {
     color: var(--title-color);
     transition: 0.2s;
 }

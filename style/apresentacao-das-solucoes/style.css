@@ -74,6 +74,10 @@ div.experimente-gratis {
 
 }
 
+.container .box-videos-apr .video-card-apr.sm{
+    height: 400px;
+}
+
 .video-card-apr .desc-video {
     display: flex;
     flex-direction: column;

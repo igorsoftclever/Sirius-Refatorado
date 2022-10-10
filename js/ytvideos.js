@@ -4,12 +4,14 @@ for(let i = 0; i < youtube.length; i++){
     const source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed + "/sddefault.jpg"
 
     let image = new Image()
+    
     if(youtube[i].dataset.embed === "S6Vouca8pwQ"){
         image.src = '../assets/imgs/mqdefault.jpg'
         console.log('oba')
     } else{
         image.src = source
     }
+
     image.addEventListener('load', function(){
         youtube[i].appendChild(image);
     }(i))

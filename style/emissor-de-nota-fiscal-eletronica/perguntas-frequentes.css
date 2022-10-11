@@ -23,4 +23,14 @@
 .box-perguntas-respostas .resposta p{
     color: var(--text-color);
     font-size: var(--text-size);
+    margin: 0.5rem 0;
+}
+
+.box-perguntas-respostas .resposta ul{
+    list-style-position: inside;
+    color: var(--text-color);
+}
+
+.box-perguntas-respostas .resposta ul li {
+    margin: 1rem 0;
 }

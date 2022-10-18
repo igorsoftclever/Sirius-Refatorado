@@ -35,7 +35,8 @@
 }
 
 .left-box img {
-    width: 90%;
+    margin: 1.5rem 0;
+    width: 60%;
     height: auto;
 }
 /* Right Collumn */
@@ -80,10 +81,16 @@
     grid-area: bot;
     justify-self: center;
     margin-top: 30px;
-    background-color: #4AC0E1;
-    padding: 1em;
-    border-radius: 1em;
-    border-color: #ffffff00;
+    background-color: var(--title-color);
+    padding: 2em;
+    border-radius: 5px;
+    border:3px solid #ffffff00;
+    transition: 0.2s;
+}
+
+.box-propaganda button:hover {
+    background-color: #005972;
+ 
 }
 
 

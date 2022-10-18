@@ -10,10 +10,18 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 0;
+    gap: 0; 
     padding: 1rem;
 }
 
 .box-videos-apr .video-card-apr.smp{
     height: 500px;
+}
+
+@media screen and (max-width: 1440px){
+    .soft-midia .video-card .youtube{
+        width: 2rem;
+        height: 200px
+       
+    } 
 }

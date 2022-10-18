@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" style="font-size: 10px;font-family: Roboto, Arial, sans-serif;">
+<html lang="pt-br"">
 
 <head>
     <meta charset="UTF-8">
@@ -12,12 +12,13 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./css/style.css">
+    <!-- 
     <link rel="stylesheet" href="./style/main-section.css">
     <link rel="stylesheet" href="./style/requirements-section.css">
     <link rel="stylesheet" href="./style/sobre-sat.css">
     <link rel="stylesheet" href="./style/mais.css">
     <link rel="stylesheet" href="./style/box-imgs.css">
-
+    -->
     <title>Home - Emissor Sat Fiscal</title>
 </head>
 
@@ -25,30 +26,59 @@
     
     <header>
         <div class="container" id="header">
-            <a href="https://sistemasatfiscal.com.br/"><img id="logo" src="./assets/imgs/logo-Soft-Clever.jpg"
+
+            <a href="/"><img id="logo" src="./assets/imgs/logo-Soft-Clever.jpg"
                     alt=""></a>
-            <nav id='nav'>
-                <ul id="menu-links">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="../apresentacao-das-solucoes/">Apresentação das Soluções</a></li>
-                    <li><a href="https://www.softclever.com.br/predesigned-pages/a-empresa/">A Empresa</a></li>
-                    <li><a href="https://www.softclever.com.br/sections-listings/clients/">Clientes</a></li>
-                    <li><a href="https://www.softclever.com.br/contato/">Contato</a></li>
-                    <li><a href="https://www.softclever.com.br/contato/">FAQ</a></li>
-                </ul>
-                <button id="menu-button"></button>
-            </nav>
         </div>
+        <nav class='navigation'>
+            <ul class="menu-links">
+                <li class="menu-redirect"><a class="menu-link-redirect"href="/">Home</a></li>
+                <li class="menu-redirect"><a class="menu-link-redirect"href="/menu/solucoes.html" rel="next">Apresentação das Soluções</a></li>
+                <li class="menu-redirect"><a class="menu-link-redirect"href="https://www.softclever.com.br/predesigned-pages/a-empresa/" rel="next">A Empresa</a></li>
+                <li class="menu-redirect"><a class="menu-link-redirect"href="https://www.softclever.com.br/sections-listings/clients/" rel="next">Clientes</a></li>
+                <li class="menu-redirect"><a class="menu-link-redirect"href="https://www.softclever.com.br/contato/" rel="next">Contato</a></li>
+                <li class="menu-redirect"><a class="menu-link-redirect"href="menu/faq.html" rel="next">FAQ</a></li>
+            </ul>
+            <button id="menu-button"></button>
+        </nav>
     </header>
 
     <main>
         <button id="wp-button">
             <a
             href="https://api.whatsapp.com/send/?phone=5511992810253&text=Ol%C3%A1%2C+envie+sua+mensagem%21&type=phone_number&app_absent=0 "><img
-                src="./assets/imgs/whatsapp.png" alt=""></a>
+                src="./assets/imgs/whatsapp.png" alt="Botão do whatsapp para entrar em contato"></a>
         </button>
 
-        <section class="banner">
+        <section class="effect-phrase-banner">
+            <div class="container-image-text">
+                <div class="container">
+                    <div class="effect-phrase-headline">
+                        <div class="effect-phrase-headline-content">
+                            <h1 class="effect-phrase-title">
+                                <strong>
+                                    <span class="effect-phrase-title-line-1">SOLUCIONANDO</span>
+                                    <span class="effect-phrase-title-line-2">SEUS</span>
+                                    <span class="effect-phrase-title-line-3">PROBLEMAS</span>
+                                </strong>
+                            </h1>
+                            <p class="effect-phrase-">Desde 1994</p>
+                        </div>
+                        <div class="effect-phrase-headline-illustrator">
+                            <picture>
+                                <source media="(max-width: 640px)" srcset="assets/imgs/headline-640.png" type="image/png">
+                                <source media="(max-width: 1000px)" srcset="assets/imgs/headline-1000.png" type="image/png">
+                                <img 
+                                src="assets/imgs/headline-1280.png" 
+                                alt="Uma mulher sentada numa cadeira com um notebook sobre a mesa de madeira,
+                                    algumas plantas e um fundo de cores calmas seguido de uma janela aberta com cortina e ao fundo um prédio feito de tijolos com algumas janelas fechadas num dia nublado. ">
+                                
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <h1>Solucionando problemas desde 1994</h1>
             <p>O Sirius SAT Lite é homologado na SEFAZ - SP</p>
             <p>Somos indicados por centenas de contadores.</p>

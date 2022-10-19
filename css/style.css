@@ -37,18 +37,18 @@ body img {
     width: 50px;
     height: 50px;
     margin: auto;
+    padding: 10px 0px;
 }
 
 .menu-container {
     grid-area: 'menu';
-    margin: 0px 30px;
-    justify-content: end;
-    
-
+    justify-self: end;
+    margin-right: 5%;
 }
 
 .menu-links {
     width: fit-content;
+    align-self: start;
 }
 
 .menu-link {

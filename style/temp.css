@@ -26,6 +26,14 @@
     color: var(--title-color);
 }
 
+.content {
+    margin-top: .75rem;
+}
+
+.banner {
+    height: 66vh;
+}
+
 .double-span {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -45,10 +53,49 @@ div.double-span {
     grid-template-columns: 1fr 3fr;
 }
 
-.contato__dados {
-    width: 100%;
-    height: 100%;
-    background: red;
+.contato__dados__lista {
+    list-style: none;
+    width: min-content;
+}
+
+.contato__dados__lista__item {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+
+    gap: .5rem;
+    display: flex;
+    align-items: center;
+}
+
+.contato__dados__lista__item-icon {
+    opacity: .75;
+}
+
+.contato__dados__lista__item-icon > img{
+    width: 1.5rem;
+}
+
+.contato__dados__lista__item-mini {
+    font-size: 1rem;
+}
+
+.contato__dados__lista__item-link {
+    color: var(--title-color);
+    opacity: .75;
+}
+
+.contato__dados__lista__item-link > a {
+    color: var(--title-color);
+    opacity: .75;
+}
+
+.contato__dados__lista__item-link:hover {
+    opacity: 1;
+}
+
+.contato__dados__lista__item-endereco {
+    font-size: 1.25rem;
 }
 
 .contato__form-layout {

@@ -1,4 +1,9 @@
 /* =================================================CONFIGS================================================= */
+:root {
+    --text-color: #222222;
+    --menu-text-color: #0487D9;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,35 +12,69 @@
 }
 
 body {
-    height: 100%;
+    min-width: 320px;
     width: 100%;
+    margin: auto;
 }
 
 header {
-    height: 200px;
+    min-height: 30px;
+    max-height: 60px;
     width: 100%;
     margin: auto;
-    text-align: center;
-    background-color: #035AA6;
+    background-color: white;
+    display: grid;
+    grid-template-areas: 
+    'logo menu';
 }
 
-li {
+body img {
+    width: 100%;
+}
 
+.logo-menu {
+    grid-area: 'logo';
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.menu-container {
+    grid-area: 'menu';
+    margin: 0px 30px;
+    justify-content: end;
+    
+
+}
+
+.menu-links {
+    width: fit-content;
+}
+
+.menu-link {
+    justify-content: right;
 }
 
 .menu-redirect {
     display: inline-block;
     text-decoration: none;
     font-weight: 300;
+    padding: 10px;
+    margin: 5px;
 }
 
 .menu-link-redirect {
-    color: #222222
+    color: var(--text-color);
 }
 
 .menu-link-redirect:hover {
-    color: #0487D9;
+    color: var(--menu-text-color);
 }
+
+.effect-phrase-headline-illustrator {
+    
+}
+
 
 /* Color Theme Swatches in Hex 
 .Palette-de-couleurs-18-1-hex { color: #022859; }
@@ -60,16 +99,7 @@ li {
 
 
 
-:root {
-    --title-size: 2.5rem;
-    --sub-title-size: 2rem;
-    --text-size: 1rem;
-    --banner-text-size: 2rem;
-    --text-color: #636363;
-    --title-color: #0095BE;
-    --banner-color: #f0f0f0;
-    --text-weight: 500;
-}
+
 
 h1 {font-size: var(--title-size);}
 h2 {font-size: var(--sub-title-size);}

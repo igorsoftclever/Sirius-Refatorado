@@ -53,6 +53,7 @@ header {
 .menu-links {
     width: fit-content;
     align-self: start;
+    margin: 0;
 }
 
 .menu-link {

@@ -17,6 +17,12 @@ body {
     margin: auto;
 }
 
+body img {
+    width: 100%;
+}
+
+/* =================================================MENU================================================= */
+
 header {
     min-height: 30px;
     max-height: 60px;
@@ -28,9 +34,7 @@ header {
     'logo menu';
 }
 
-body img {
-    width: 100%;
-}
+
 
 .logo-menu {
     grid-area: 'logo';
@@ -69,10 +73,6 @@ body img {
 
 .menu-link-redirect:hover {
     color: var(--menu-text-color);
-}
-
-.effect-phrase-headline-illustrator {
-    
 }
 
 

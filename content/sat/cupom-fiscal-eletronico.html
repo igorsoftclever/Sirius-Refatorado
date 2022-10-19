@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="stylesheet" href="../static/css/navbar.css">
-    <link rel="stylesheet" href="../static/css/header-top.css">
-    <link rel="stylesheet" href="../static/css/experimente.css">
-    <link rel="stylesheet" href="../static/css/footer.css">
-    <link rel="stylesheet" href="../static/css/menu-mobile.css">
-    <link rel="stylesheet" href="../static/css/table.css">
-    <link rel="stylesheet" href="../static/css/cupom-fiscal-eletronico/cupom-fiscal-eletronico.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/header-top.css">
+    <link rel="stylesheet" href="css/experimente.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/menu-mobile.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/cupom-fiscal-eletronico.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap"
@@ -25,58 +25,33 @@
 </head>
 
 <body>
-    <div class="header-top" id="header-top">
-        <div class="mini-card">
-            <div class="icon">
-                <img src="../static/assets/icons/telefone.png" alt="">
+    <header>
+        <div class="menu">
+            <div class="logo-menu">
+                <a href="/"><img src="/assets/imgs/android-chrome-50x50.png" alt=""></a>
             </div>
 
-            <div class="links">
-                <a id="link-title" href="https://www.softclever.com.br/contato/">Fale com a gente</a>
-                <span href="#">11 3991-3923 / 2361-8334</span>
-            </div>
+            <nav class='menu-container'>
+                <ul class="menu-links">
+                    <li class="menu-redirect"><a class="menu-link-redirect" href="/">Home</a></li>
+                    <li class="menu-redirect"><a class="menu-link-redirect" href="/content/menu/solucoes.html"
+                            rel="next">Apresentação das Soluções</a></li>
+                    <li class="menu-redirect"><a class="menu-link-redirect"
+                            href="https://www.softclever.com.br/predesigned-pages/a-empresa/" rel="next">A Empresa</a>
+                    </li>
+                    <li class="menu-redirect"><a class="menu-link-redirect"
+                            href="https://www.softclever.com.br/sections-listings/clients/" rel="next">Clientes</a></li>
+                    <li class="menu-redirect"><a class="menu-link-redirect"
+                            href="https://www.softclever.com.br/contato/" rel="next">Contato</a></li>
+                    <li class="menu-redirect"><a class="menu-link-redirect" href="/content/menu/faq.html"
+                            rel="next">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-button"></button>
+            <script src="./js/menu.js"></script>
         </div>
 
-        <div class="mini-card">
-            <div class="icon">
-                <img src="../static/assets/icons/o-email.png" alt="">
-            </div>
-            <div class="links">
-                <a id="link-title" href="#">Envie um E-mail</a>
-                <span href="#">softclever@softclever.com.br</span>
-            </div>
-        </div>
-
-        <div class="mini-card">
-            <div class="icon">
-                <img src="../static/assets/icons/contrato.png" alt="">
-            </div>
-            <div class="links">
-                <a id="link-title" href="#">Soluções em Sistemas</a>
-                <span href="#">Desde 1994</span>
-            </div>
-        </div>
-    </div>
-
-
-    <header class="container">
-
-        <a href="#">
-
-            <img id="logo" src="../static/assets/imgs/logo-Soft-Clever-500px.png" alt="">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="https://sistemasatfiscal.com.br/">Home</a></li>
-                <li><a href="https://www.softclever.com.br/project-view/apresentacao-das-solucoes/">Apresentação das
-                        Aplicações</a></li>
-                <li><a href="https://www.softclever.com.br/predesigned-pages/a-empresa/">A Empresa</a></li>
-                <li><a href="https://www.softclever.com.br/sections-listings/clients/">Clientes</a></li>
-                <li><a href="https://www.softclever.com.br/contato/">Contato</a></li>
-            </ul>
-            <button class="mobile-button"><img src="../static/assets/icons/menu.png" alt=""
-                    style="width: 30px;"></button>
-        </nav>
     </header>
 
     <div class="main-banner">

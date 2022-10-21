@@ -23,88 +23,7 @@ body img {
 
 /* =================================================MENU================================================= */
 
-.menu {
-    min-height: 30px;
-    max-height: 70px;
-    width: 100%;
-    margin: auto;
-    background-color: white;
-    display: grid;
-    grid-template-areas: 
-    'logo menu';
-}
-
-.logo-menu {
-    grid-area: 'logo';
-    min-width: 30px;
-    max-width: 50px;
-    min-height: 30px;
-    max-height: 50px;
-    margin: auto;
-    padding: 10px 0px;
-}
-
-.menu-container {
-    grid-area: 'menu';
-    justify-self: end;
-    align-self: center;
-    margin-right: 5%;
-}
-
-.menu-links {
-    width: fit-content;
-    align-self: start;
-    margin: 0px;
-}
-
-.menu-link {
-    justify-content: right;
-}
-
-.menu-redirect {
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 300;
-    padding: 10px;
-    margin: 5px;
-}
-
-.menu-link-redirect {
-    color: var(--text-color);
-    transition-duration: .3s;
-}
-
-.menu-link-redirect:hover {
-    color: var(--menu-text-color);
-}
-
-.menu-button {
-    display: menu;
-}
-
-@media screen and (max-width: 775px) {  
-}
-
-/* Color Theme Swatches in Hex 
-.Palette-de-couleurs-18-1-hex { color: #022859; }
-.Palette-de-couleurs-18-2-hex { color: #035AA6; }
-.Palette-de-couleurs-18-3-hex { color: #0487D9; }
-.Palette-de-couleurs-18-4-hex { color: #05AFF2; }
-.Palette-de-couleurs-18-5-hex { color: #1BDDF2; }
-
- Color Theme Swatches in RGBA 
-.Palette-de-couleurs-18-1-rgba { color: rgba(1, 39, 89, 1); }
-.Palette-de-couleurs-18-2-rgba { color: rgba(3, 89, 165, 1); }
-.Palette-de-couleurs-18-3-rgba { color: rgba(4, 135, 216, 1); }
-.Palette-de-couleurs-18-4-rgba { color: rgba(4, 174, 242, 1); }
-.Palette-de-couleurs-18-5-rgba { color: rgba(26, 220, 242, 1); }
-
- Color Theme Swatches in HSLA 
-.Palette-de-couleurs-18-1-hsla { color: hsla(214, 96, 17, 1); }
-.Palette-de-couleurs-18-2-hsla { color: hsla(208, 96, 33, 1); }
-.Palette-de-couleurs-18-3-hsla { color: hsla(203, 96, 43, 1); }
-.Palette-de-couleurs-18-4-hsla { color: hsla(197, 96, 48, 1); }
-.Palette-de-couleurs-18-5-hsla { color: hsla(186, 89, 52, 1); }
+/*
 
 .content {
     width: 100%;
@@ -444,30 +363,6 @@ div.container nav ul li a:hover{
 }
 */
 /* =================================================WHATSAPP================================================= */
-body #wp-button {
-    position: fixed;
-    border: none;
-    background-color: rgba(0, 149, 190, 0);
-    width: 20px;
-    top: 90%;
-    right: 5%;
-}
-
-body #wp-button a img{
-    width: 50px;
-}
-
-@media screen and (max-width: 650px) {
-    body #wp-button {
-        position: fixed;
-        border: none;
-        background-color: rgba(0, 149, 190, 0);
-        width: 20px;
-        top: 90%;
-        right: 3rem;
-    }
-}
-/* =================================================FOOTER================================================= */
 /*
 footer {
     width: 100%;

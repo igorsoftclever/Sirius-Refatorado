@@ -1,9 +1,12 @@
-const btnMenu = document.querySelector('button#menu-button') ;
+const btn = document.querySelector('.menu-button');
+const menu = document.querySelector('.menu');
 
 
-function toggleMenu(){
-    const nav = document.querySelector('nav#nav');
-    nav.classList.toggle('active')
-}
-
-btnMenu.addEventListener('click', toggleMenu);
+btn.addEventListener('click', function() {
+    
+  if(menu.style.display === 'grid') {
+      menu.style.display = 'none';
+  } else {
+      menu.style.display = 'grid';
+  }
+});

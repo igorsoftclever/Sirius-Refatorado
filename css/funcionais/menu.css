@@ -57,8 +57,46 @@ header {
 
 .hamburger-menu {
     display: none;
-    height: 50px;
-    width: 50px;
+    width: 40px;
+    height: 24px;
+}
+
+.menu-button {
+    background-color: transparent;
+    background-image: url('/assets/imgs/arrowUp.png');
+    background-size: contain;
+    width: 40px;
+    height: 24px;
+
+    border: 0px;
+    cursor: pointer;
+}
+
+
+@keyframes upArrow {
+    0% {
+        top: 1%;
+    }
+
+    100% {
+        top: 3%;
+    }
+}
+
+@keyframes upArrow-menu-open {
+    0% {
+        top: 57%;
+    }
+
+    100% {
+        top: 59%;
+    }
+}
+
+@media screen and (min-width: 791px) {
+    .menu {
+        display: grid;
+    }
 }
 
 @media screen and (max-width: 790px) {
@@ -72,23 +110,24 @@ header {
     .hamburger-menu {
         display: flex;
         position: fixed;
-        top: 5%;
-        margin: auto;
+        top: 2%;
+        left: 50%;
+        transform: translateX(-50%);
 
-        background-color: white;
+        animation-name: upArrow;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+        margin: auto;
 
         border-radius: 15px;
         border: 0px
-
     }
 
-    .menu-button {
-        width: 100%;
-        height: 100%;
-        
-        border: 0px;
-        background-color: transparent;
-        cursor: pointer;
+    .hamburger-menu-open {
+        animation-name: upArrow-menu-open;
     }
 
     .menu {
@@ -112,31 +151,38 @@ header {
         max-width: 50px;
         min-height: 30px;
         max-height: 50px;
-        margin: auto;
         padding: 10px 0px;
     }
 
     .menu-container {
         grid-area: 'menu';
-        justify-self: center;
-        align-self: center;
-        margin: auto;
+        margin: 0;
+        width: 100%;
     }
 
     .menu-links {
-        width: fit-content;
-        align-self: center;
-        margin: auto;
+        width: 100%;
+        margin: 0;
     }
 
     .menu-redirect {
-        display: block;
-        width: fit-content;
-        text-decoration: none;
-        font-weight: 300;
-        padding: 10px;
-        margin: auto;
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        list-style-type: none;
+    }
 
+    .menu-redirect:nth-child(odd) {
+        background-color: rgba(4, 135, 217, 0.25)
+    }
+
+    .menu-link-redirect {
+        text-decoration: none;
+        padding: 5px;
+        font-weight: 300;
+        text-align: center;
+        align-self: center;
     }
 }
 

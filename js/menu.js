@@ -29,12 +29,11 @@ window.addEventListener('resize', function () {
         menu.style.display = 'grid';
         document.querySelector(".hamburger-menu").classList.remove("hamburger-menu-open");
     } else {
-        menu.style.display === 'none'
-        document.querySelector(".hamburger-menu").classList.remove("hamburger-menu-open");
+        if (menu.style.display === 'none') {
+            document.querySelector(".hamburger-menu").classList.remove("hamburger-menu-open");
+        }
+        if (menu.style.display === 'grid') {
+            document.querySelector(".hamburger-menu").classList.add("hamburger-menu-open");
+        }
     }
-
-    /* 
-        Se tela menor q 790 e menu NÃO aparecer Remover hamburger-menu-open
-        Se tela menor q 790 e menu aparecer adicionar hamburger-menu
-    */
 });
